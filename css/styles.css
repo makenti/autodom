@@ -7,7 +7,7 @@
 
 body{
   font-family: 'Akzentica', sans-serif;
-  overflow: auto!important;
+  /*overflow: auto!important;*/
 }
 div {
 	display: block;
@@ -211,13 +211,9 @@ footer{background: #E5E5E5;padding-top: 80px;font-size: 14px;}
  	margin-left: 5px;
  }
  /*slider */
-.intro img{
-	height: 540px;
-	object-fit:cover;
-}
-.slide-text{
-	position: absolute;
-	bottom: 0;
+.slider-item {
+	height: 500px;
+	
 }
 /* sklad */
 .circle-marker {
