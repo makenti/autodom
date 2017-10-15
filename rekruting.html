@@ -10,7 +10,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
-
+	<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
@@ -26,11 +26,12 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				anchors: ['firstPage'],
-				sectionsColor: ['#4A6FB1'],
-				autoScrolling: false,
-				css3: true,
-				fitToSection: false
+
+				
+
+				
+		scrollingSpeed: 1000,
+		
 			});
 		});
 	</script>
@@ -38,19 +39,47 @@
 </head>
 <body>
 <div class="">
-	<header class="flex items-center justify-between">
-		<div class="flex items-center">
-			<img src="images/logo-main-w.svg" alt="" class="header-logo">
-			<span class="phone-span">+7 727 39 45 605</span>
+	<div class="section section-main">
+		<div class="block-img">
+			<img src="images/section2.jpg" alt="">
 		</div>
-		<ul class="header-menu">
-			<li><a href="">О компании</a></li>
-			<li><a href="">Партнеры</a></li>
-			<li><a href="">Контакты</a></li>
-		</ul>
-	</header>
-	<div class="section">
-		<img src="images/recruiting.jpg" alt="" class="cover-img">
+		<div class="container">
+			<div class="about-text mb2">
+				<h2 class="mb2">Рекрутинг</h2>
+				<p class="mb2">
+					ТОО «North Caspian Recruitment Company» является вновь созданным подразделением  Autodom Group, которое консолидировало в себе следующие функции: Проведение тренингов, предоставление иностранных и местных кадров, рекрутинг, производственные и специализированные услуги.
+				</p>
+				<p class="mb2">
+					Имея более 20 000 резюме (как граждан Казахстана, так и иностранных кадров) в своей базе данных, а также 1 500 сотрудников в самой компании,  ТОО «North Caspian Recruitment Company» занимает уникальную позицию, которая позволяет обеспечить сбалансированное сочетание местного и иностранного персонала, а также широкий диапазон профессий и уровней квалификации.
+				</p>
+				<p class="mb2">
+					ТОО «North Caspian Recruitment Company» проводит обучение должностных лиц и специалистов предприятии учреждении, организации по вопросам промышленной безопасности и охраны труда.
+				</p>
+				
+
+				<div class="btn my4">
+					<a href="">NCRC.KZ <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+				</div>
+				
+				<div class="block-img">
+					
+					<div id="fullpage">
+						<div class="section">
+							<div class="slide" data-anchor="slide1">
+								<div class="intro">
+									<h1>Example</h1>
+									<p>HTML markup example to define 4 sections.</p>
+									<img src="images/section2.jpg" alt="">
+								</div>
+							</div>
+							<div class="slide" data-anchor="slide2"> Slide 2 </div>
+							<div class="slide" data-anchor="slide3"> Slide 3 </div>
+							<div class="slide" data-anchor="slide4"> Slide 4 </div>
+						</div>					
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="section section-footer flex">
 		<div class="">
