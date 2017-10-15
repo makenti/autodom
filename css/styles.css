@@ -98,7 +98,6 @@ footer{background: #E5E5E5;padding-top: 200px;font-size: 14px;}
 .small {
 	font-size: 80%;
 	line-height: 0.9rem;
-
 }
 .container {
 	width: 1070px;
@@ -117,9 +116,6 @@ footer{background: #E5E5E5;padding-top: 200px;font-size: 14px;}
 .about-text {
 	color: #000;
     line-height: 1.841em;
-}
-.img img {
-	width: 100%;
 }
 .row {
 	width: 100%;
@@ -179,7 +175,14 @@ footer{background: #E5E5E5;padding-top: 200px;font-size: 14px;}
  	margin-left: 5px;
  }
  /*slider */
-
+.intro img{
+	height: 540px;
+	object-fit:cover;
+}
+.slide-text{
+	position: absolute;
+	bottom: 0;
+}
 /* sklad */
 .circle-marker {
 	list-style-type: none;
