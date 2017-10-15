@@ -99,7 +99,7 @@ footer, .section-footer {
 	margin-bottom: 50px;
 }
 .block-img img{
-    height: 500px;
+    height: 600px;
     object-fit: cover;
 }
 
@@ -191,7 +191,7 @@ iframe{
 
 .click-video{
 	position: absolute;
-	top: 40%;
+	top: 48%;
 	color: #fff;
 	border: 2px solid #fff;
 	left: 41%;
