@@ -10,7 +10,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
-
+	<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
@@ -26,7 +26,12 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				verticalCentered: false
+
+				
+
+				
+		scrollingSpeed: 1000,
+		
 			});
 		});
 	</script>
@@ -34,7 +39,66 @@
 </head>
 <body>
 <div class="">
+	<div class="section section-main">
+		<div class="block-img">
+			<img src="images/section2.jpg" alt="">
+		</div>
+		<div class="container">
+			<div class="about-text mb2">
+				<h2 class="mb2">Спецтехника и грузоподъемное оборудование</h2>
+				<p class="mb2">
+					<span class="bold">ТОО «AUTODOM Machinery»</span> - Эксклюзивный Дилер JCB Ltd ( J. C. Bamford Excavators Ltd - Великобритания) на территории Республики Казахстан .
+				</p>
+				<p class="mb2">
+					JCB Ltd (или J. C. Bamford Excavators Ltd ) — британская компания, одна из крупнейших мировых производителей тяжелого строительного оборудования.
+				</p>
+				<p class="mb2">
+					 Компания производит более 300 различных видов машин, включая экскаваторы-погрузчики, телескопические погрузчики Loadall, гусеничные и колесные экскаваторы, колесные погрузчики, самосвалы с шарнирно-сочлененной рамой, вилочные погрузчики  повышенной проходимости, миниэкскаваторы, минипогрузчики с бортовым поворотом, уплотнительное оборудование JCB Vibromax, генераторы и оборудование для земельных работ серии Groundcare.
+				</p>
+				
 
+				<div class="btn mb4">
+					<a href="">JCB-KZ.COM <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+				</div>
+				<div class="block-video">
+					
+					
+					<iframe id="yt" src="https://www.youtube.com/embed/8n1LWUSVGcI" frameborder="0" allowfullscreen></iframe>
+					<div id="content">
+						<img id="alternative" src="images/fon.jpg" />
+						
+							<button class="click-video">СМОТРЕТЬ ВИДЕО <i class="fa fa-play" aria-hidden="true"></i></button>						
+						
+					</div>
+				</div>
+				<script type="text/javascript">
+					$("button").click(function () {
+					    $("#content").hide();
+					    $("#yt")[0].src += "?autoplay=1";
+					    setTimeout(function(){ $("#yt").show(); }, 200);
+					});
+				</script>
+				<hr class="my4">
+				<div class="block-img">
+					
+					<div id="fullpage">
+						<div class="section">
+							<div class="slide" data-anchor="slide1">
+								<div class="intro">
+									<h1>Example</h1>
+									<p>HTML markup example to define 4 sections.</p>
+									<img src="images/section2.jpg" alt="">
+								</div>
+							</div>
+							<div class="slide" data-anchor="slide2"> Slide 2 </div>
+							<div class="slide" data-anchor="slide3"> Slide 3 </div>
+							<div class="slide" data-anchor="slide4"> Slide 4 </div>
+						</div>					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="section section-footer flex">
 		<div class="">
 			<p class="lead">Услуги Autodom Group</p>

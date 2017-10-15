@@ -10,7 +10,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
-
+	<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
@@ -26,7 +26,12 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				verticalCentered: false
+
+				
+
+				
+		scrollingSpeed: 1000,
+		
 			});
 		});
 	</script>
@@ -34,7 +39,48 @@
 </head>
 <body>
 <div class="">
+	<div class="section section-main">
+		<div class="block-img">
+			<img src="images/section2.jpg" alt="">
+		</div>
+		<div class="container">
+			<div class="about-text mb2">
+				<h2 class="mb2">Грузовые автомобили</h2>
+				<p class="mb2">
+					ТОО «HINO Motors» один из крупнейших в Японии изготовителей грузовых автомобилей и автобусов, с 1960-х годов является отделением корпорации Toyota. ТОО «Hino Motors» изготовляет широкую гамму дизельных автобусов и грузовиков различного назначения и является лидером продаж грузовых автомобилей за последние 40 лет в Японии. Производительность грузовых автомобилей составляет более 150 000 единиц грузовой техники в год.
+				</p>
+				<p class="mb2">
+					ТОО «HINO Motors»  производит на своих заводах малотоннажные грузовые автомобили «TOYOTA Dyna» и «Toyota Toyoace» специально для корпорации TOYOTA по лицензии. Также производит на своих заводах популярные внедорожники Toyota Land Cruiser Prado и FJ Cruiser.
+				</p>
+				<p class="mb2">
+					Крупные клиенты компании ТОО «Hino Motors Kazakhstan»: ТОО «StarHome Product»,ТОО «Prestige», TOO «Раунур Логистикс», ТОО «МАГ – Cola».
+				</p>
+				
 
+				<div class="btn mb4">
+					<a href="">HINO-TRUCKS.KZ <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+				</div>
+				
+				<div class="block-img">
+					
+					<div id="fullpage">
+						<div class="section">
+							<div class="slide" data-anchor="slide1">
+								<div class="intro">
+									<h1>Example</h1>
+									<p>HTML markup example to define 4 sections.</p>
+									<img src="images/section2.jpg" alt="">
+								</div>
+							</div>
+							<div class="slide" data-anchor="slide2"> Slide 2 </div>
+							<div class="slide" data-anchor="slide3"> Slide 3 </div>
+							<div class="slide" data-anchor="slide4"> Slide 4 </div>
+						</div>					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="section section-footer flex">
 		<div class="">
 			<p class="lead">Услуги Autodom Group</p>
