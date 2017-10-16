@@ -67,26 +67,34 @@ html.fp-enabled,
     -ms-user-select: none; /* IE10+ */
     position: absolute;
     z-index: 4;
-    top: 50%;
+    bottom: 25px;
     cursor: pointer;
     width: 0;
     height: 0;
-    border-style: solid;
-    margin-top: -38px;
+    
+    
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
-.fp-controlArrow.fp-prev {
-    left: 15px;
-    width: 0;
-    border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+.fp-controlArrow.fp-prev{
+    right: 90px;
+}
+.fp-controlArrow.fp-prev:before {
+    font-size: 40px;
+    
+    content: '\003c';
+    color:#711a1e;
 }
 .fp-controlArrow.fp-next {
-    right: 15px;
-    border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
+    right: 20px;
+
+}
+.fp-controlArrow.fp-next:before {
+    
+    font-size: 40px;
+    content: '\003e';
+    color:#711a1e;
 }
 .fp-scrollable {
     overflow: hidden;
