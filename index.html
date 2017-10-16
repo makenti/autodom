@@ -26,7 +26,21 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				verticalCentered: false
+				verticalCentered: false,
+				anchors:[
+					'section0',
+					'section1',
+					'section2',
+					'section3',
+					'section4',
+					'section5',
+					'section6',
+					'section7',
+					'section8',
+					'section9',
+					'section10',
+					'partners',
+				]
 			});
 		});
 	</script>
@@ -37,28 +51,28 @@
 	<div class="section cover-bg" id="section0">
 		<div class="header-index flex items-center justify-between">
 			<div class="flex items-center">
-				<img src="images/logo-main.svg" alt="" class="header-logo">
-				<span class="phone-span">+7 727 39 45 605</span>
+				<a href="index.html"><img src="images/logo-main.svg" alt="" class="header-logo"></a>
+				<a href="tel:77273945605" class="phone-span">+7 727 39 45 605</a>
 			</div>
 			<ul class="header-menu">
-				<li><a href="">О компании</a></li>
-				<li><a href="">Партнеры</a></li>
-				<li><a href="">Контакты</a></li>
+				<li><a href="about.html">О компании</a></li>
+				<li><a href="index.html#partners">Партнеры</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
 			</ul>
 		</div>
 		<div class="slide active">
 			<div class="main-slider-content white-text">
-				<h1 class="white-text">На месторождениях и в городах</h1>
+				<h1 class="white-text mb2">На месторождениях и в городах</h1>
 				<div class="slider-content">АВТОДОМ — лидер в сфере услуг пассажирских перевозок на месторождениях и в городах Казахстана</div>
 				<p class="mb3"><a href="#" class="btn btn-red text-decoration-none">Арендовать транспорт</a></p>
-				<p><a href="#">Подробнее</a></p>
+				<p><a href="#" class="white-text">Подробнее</a></p>
 			</div>
 		</div>
     <div class="slide">
 			<div class="main-slider-content white-text">
-				<h1 class="white-text">Безопасность превыше всего!</h1>
+				<h1 class="white-text mb2">Безопасность превыше всего!</h1>
 				<div class="slider-content">АВТОДОМ работает по принципу постоянного совершенствования. Основной аспект компании - "безопасность превыше всего!".</div>
-				<p><a href="#">Подробнее</a></p>
+				<p><a href="#" class="white-text">Подробнее</a></p>
 			</div>
 		</div>
 	</div>
@@ -74,7 +88,7 @@
 				<p class="mb1">Основной аспект компании - <b>"Безопасность превыше всего!"</b>. Для поддержания данной цели, компания использует только передовые технологии. </p>
 				<p class="mb1">Важной особенностью предоставления услуг является возможность клиента выбрать именно тот набор услуг, который он считает необходимым и достаточным. </p>
 			</div>
-			<p><a href="">Читать подробнее</a></p>
+			<p><a href="about.html" class="red-text">Читать подробнее</a></p>
     </div>
   </div>
 	<div class="section cover-bg flex" id="section2">
@@ -84,7 +98,7 @@
 			<div class="section-content white-text mb3">
 				<p>Autodom Group с 2002 года предоставляет транспортные услуги по всей территории Казахстана. Предоставление долгосрочных услуг по пассажирским перевозкам на месторождениях и городах Республики Казахстан.</p>
 			</div>
-			<p class="mb3"><a href="#" class="white-text">Читать подробнее</a></p>
+			<p class="mb3"><a href="car_rent.html" class="white-text">Читать подробнее</a></p>
 			<p>
 				<button class="btn btn-red mr1">Арендовать транспорт</button>
 				<button class="btn btn-transparent">Калькулятор цен</button>
@@ -100,10 +114,10 @@
 				<p class="mb1">Все автосалоны оказывают послепродажное обслуживание автомобилей и продажу оригинальных запасных частей. </p>
 			</div>
 			<ul class="list-reset">
-				<li><a href="" class="red-text caps ">Тойота Сити Алматы</a></li>
-				<li><a href="" class="red-text caps ">Тойота Сити Астана</a></li>
-				<li><a href="" class="red-text caps ">Тойота Актау</a></li>
-				<li><a href="" class="red-text caps ">Тойота Костанай</a></li>
+				<li><a href="car_sale.html" class="red-text caps ">Тойота Сити Алматы</a></li>
+				<li><a href="car_sale.html" class="red-text caps ">Тойота Сити Астана</a></li>
+				<li><a href="car_sale.html" class="red-text caps ">Тойота Актау</a></li>
+				<li><a href="car_sale.html" class="red-text caps ">Тойота Костанай</a></li>
 			</ul>
     </div>
 		<div class="section-image"></div>
@@ -115,8 +129,8 @@
 			<div class="section-content mb2">
 				<p class="white-text">ТОО «E-drivetech Eurasia» предлагает решение для обеспечения экономически эффективной и удобной стратегии управления транспортным парком, которая повысит безопасность водителей и транспортных средств.</p>
 			</div>
-			<p class="mb2"><a href="" class="white-text">Читать подробнее</a></p>
-			<p><button class="btn btn-red">e-drivetech.kz</button></p>
+			<p class="mb2"><a href="gps.html" class="white-text">Читать подробнее</a></p>
+			<p><a href="http://e-drivetech.kz/" class="btn btn-red">e-drivetech.kz</a></p>
     </div>
 	</div>
 	<div class="section cover-bg flex" id="section5">
@@ -132,9 +146,8 @@
 				<li>Широкий модельный ряд самоходных штабелеров LEMA с грузоподъемностью до 2000 кг и высотой подъема до 5,5 метров; </li>
 				<li>Промышленные колеса и ролики Tellure Rota;</li>
 			</ul>
-			<p>
-				<button class="btn btn-red">logisystem.kz</button>
-			</p>
+			<p class="mb2"><a href="sklad.html" class="red-text">Читать подробнее</a></p>
+			<p><a href="http://logisystem.kz/" class="btn btn-red">logisystem.kz</a></p>
     </div>
 		<div class="section-image "></div>
 	</div>
@@ -145,10 +158,10 @@
 			<div class="section-content mb2">
 				<p class="white-text">ТОО «AUTODOM Machinery» — Эксклюзивный Дилер JCB Ltd (J. C. Bamford Excavators Ltd — Великобритания) на территории Республики Казахстан.</p>
 			</div>
-			<p class="mb3"><a href="#" class="white-text">Читать подробнее</a></p>
+			<p class="mb3"><a href="car_big.html" class="white-text">Читать подробнее</a></p>
 			<p>
-				<button class="btn btn-red mr1">jcb-kz.com</button>
-				<button class="btn btn-transparent">Смотреть видео</button>
+				<a href="http://jcb-kz.com/" class="btn btn-red mr1">jcb-kz.com</a>
+				<a href="car_big.html" class="btn btn-transparent">Смотреть видео</a>
 			</p>
     </div>
 	</div>
@@ -159,8 +172,8 @@
 				<p class="mb2">ТОО «HINO Motors» один из крупнейших в Японии изготовителей грузовых автомобилей и автобусов, с 1960-х годов является отделением корпорации Toyota. </p>
 				<p class="mb2">Крупные клиенты компании ТОО «Hino Motors Kazakhstan»: ТОО «StarHome Product»,ТОО «Prestige», TOO «Раунур Логистикс», ТОО «МАГ – Cola».</p>
 			</div>
-			<p class="mb3"><a href="#" class="white-text">Читать подробнее</a></p>
-			<p><button class="btn btn-white">hino-trucks.kz</button></p>
+			<p class="mb3"><a href="car_machine.html" class="white-text">Читать подробнее</a></p>
+			<p><a href="http://hino-trucks.kz/" class="btn btn-white">hino-trucks.kz</a></p>
     </div>
 		<div class="section-image "></div>
 	</div>
@@ -183,6 +196,7 @@
 					<li>Площадь Офисного помещения составляет- 180 м2</li>
 				</ul>
 			</div>
+			<p class="mb3"><a href="service_save.html" class="red-text">Читать подробнее</a></p>
     </div>
 	</div>
 	<div class="section cover-bg flex" id="section9">
@@ -191,9 +205,9 @@
 			<div class="section-content mb2">
 				<p class="white-text">ТОО «LogiSystem Service» Динамично развивающаяся компания в сфере: Дистрибуция food/nonfood, Catering, HoReCa.</p>
 			</div>
-			<p class="mb3"><a href="#" class="white-text">Читать подробнее</a></p>
+			<p class="mb3"><a href="fmcg.html" class="white-text">Читать подробнее</a></p>
 			<p>
-				<button class="btn btn-white">logis-service.kz</button>
+				<a href="www.logis-service.kz" class="btn btn-white">logis-service.kz</a>
 			</p>
     </div>
 		<div class="section-image"></div>
@@ -203,12 +217,57 @@
     <div class="section-body">
 			<h1 class="red-text mb2">Рекрутинг</h1>
 			<div class="section-content mb2">
-				<p class="">ТОО «North Caspian Recruitment Company» является вновь созданным подразделением Autodom Group, которое консолидировало в себе следующие функции: Проведение тренингов, предоставление иностранных и местных кадров, рекрутинг, производственные и специализированные услуги.</p>
+				<p >ТОО «North Caspian Recruitment Company» является вновь созданным подразделением Autodom Group, которое консолидировало в себе следующие функции: Проведение тренингов, предоставление иностранных и местных кадров, рекрутинг, производственные и специализированные услуги.</p>
 			</div>
-			<p>
-				<button class="btn btn-red mr1">ncrc.kz</button>
-			</p>
+			<p><a href="http://ncrc.kz/" class="btn btn-red mr1">ncrc.kz</a></p>
     </div>
+	</div>
+	<div class="section" data-anchor="partners">
+		<div class="partners-container">
+			<h2 class="red-text center mb2">Партнеры</h2>
+			<div class="flex justify-between">
+				<div class="partner-item">
+					<img src="images/partner1.jpg" alt="">
+					<p><a href="#">Agip Karachaganak B.V</a></p>
+				</div>
+				<div class="partner-item">
+					<img src="images/partner2.jpg" alt="">
+					<p><a href="#">Отель Рахат Палас</a></p>
+				</div>
+				<div class="partner-item">
+					<img src="images/partner3.jpg" alt="">
+					<p><a href="#">Baker Hughes</a></p>
+				</div>
+			</div>
+			<div class="flex justify-between">
+				<div class="partner-item">
+					<img src="images/partner4.jpg" alt="">
+					<p><a href="#">ТОО Saipem S.p.a.</a></p>
+				</div>
+				<div class="partner-item">
+					<img src="images/partner5.jpg" alt="">
+					<p><a href="#">Shell Kazakhstan Development B.V.</a></p>
+				</div>
+				<div class="partner-item">
+					<img src="images/partner6.jpg" alt="">
+					<p><a href="#">ТОО "ERSAI Caspian Contractor"</a></p>
+				</div>
+			</div>
+			<div class="flex justify-between">
+				<div class="partner-item">
+					<img src="images/partner7.jpg" alt="">
+					<p><a href="#">North Caspian Operating Company B.V.</a></p>
+				</div>
+				<div class="partner-item">
+					<img src="images/partner8.jpg" alt="">
+					<p><a href="#">Chevron Munaigas Inc.</a></p>
+				</div>
+				<div class="partner-item">
+					<img src="images/partner9.jpg" alt="">
+					<p><a href="#">Karachaganak Petroleum Operating B.V.</a></p>
+				</div>
+			</div>
+		</div>
 	</div>
 	<footer class="section">
 		<div class="footer-logo-container">
@@ -218,32 +277,32 @@
 			<div class="">
 				<p class="lead">Услуги Autodom Group</p>
 				<ul>
-					<li>Пассажирские перевозки и аренда автомобилей</li>
-					<li>Продажа автомобилей и послепродажное обслуживание</li>
-					<li>GPS мониторинг</li>
-					<li>Складское оборудование</li>
-					<li>Спецтехника и грузоподъемное оборудование</li>
-					<li>Грузовые атомобили</li>
-					<li>Услуги хранения и обработка вагонов</li>
-					<li>FMCG — Товары повседневного спроса</li>
-					<li>Рекрутинг</li>
-					<li>Партнеры</li>
+					<li><a href="car_rent.html">Пассажирские перевозки и аренда автомобилей</a></li>
+					<li><a href="car_sale.html">Продажа автомобилей и послепродажное обслуживание</a></li>
+					<li><a href="gps.html">GPS мониторинг</a></li>
+					<li><a href="sklad.html">Складское оборудование</a></li>
+					<li><a href="car_machine.html">Спецтехника и грузоподъемное оборудование</a></li>
+					<li><a href="car_big.html">Грузовые атомобили</a></li>
+					<li><a href="service_save.html">Услуги хранения и обработка вагонов</a></li>
+					<li><a href="fmcg.html">FMCG — Товары повседневного спроса</a></li>
+					<li><a href="rekruting.html">Рекрутинг</a></li>
+					<li><a href="#partners">Партнеры</a></li>
 				</ul>
 			</div>
 			<div class="">
 				<p class="lead">О компании</p>
 				<ul>
-					<li>История</li>
-					<li>Руководство</li>
-					<li>Награды, достижения, сертификаты</li>
-					<li>Отзывы клиентов</li>
+					<li><a href="about.html">История</a></li>
+					<li><a href="about.html">Руководство</a></li>
+					<li><a href="about.html">Награды, достижения, сертификаты</a></li>
+					<li><a href="about.html">Отзывы клиентов</a></li>
 				</ul>
 			</div>
 			<div class="">
 				<p class="lead">Контакты</p>
 				<ul>
-					<li>Отделения в РК</li>
-					<li>Обратная связь</li>
+					<li><a href="contacts.html">Отделения в РК</a></li>
+					<li><a href="contacts.html">Обратная связь</a></li>
 				</ul>
 			</div>
 		</div>
