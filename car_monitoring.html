@@ -8,6 +8,9 @@
 	
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
@@ -16,12 +19,9 @@
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
 	
+	<script type="text/javascript" src="js/owl.carousel.js"></script>		
 	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.js.js"></script>
-	
-
 </head>
 <body>
 <div class="">
@@ -58,36 +58,32 @@
 				<p class="mb2">
 					- Обнаружения технических неисправностей в различных частях транспорта
 				</p>
-
-				<div class="btn mb4">
-					<a href="">E-DRIVETECH.KZ <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+				<div class="mb4">
+					<a class="btn btn-red text-decoration-none btn-color-white" href="">E-DRIVETECH.KZ  <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 				</div>
-				
-				<div id="image-slider">
-					<div class="section">
-						<div class="slide" data-anchor="slide1">
-							<h3 class="slide-text">Наблюдения и контроль каждого автомобиля, водителя автопарка: маршруты,
-								остановки ,скорость движения, время и точка отправления/прибытие,длительность пути</h3>
-							<div class="intro">													
-								<img src="images/gps_slid_1.jpg" alt="">
-							</div>
-						</div>
-						<div class="slide" data-anchor="slide2">
-							<h3 class="slide-text">Наблюдения и контроль каждого автомобиля, водителя автопарка: маршруты,
-								остановки ,скорость движения, время и точка отправления/прибытие,длительность пути</h3>
-							<div class="intro">													
-								<img src="images/gps_slid_2.jpg" alt="">
-							</div>
-						</div>
-						<div class="slide" data-anchor="slide3">
-							<h3 class="slide-text">Наблюдения и контроль каждого автомобиля, водителя автопарка: маршруты,
-								остановки ,скорость движения, время и точка отправления/прибытие,длительность пути</h3>
-							<div class="intro">													
-								<img src="images/gps_slid_3.jpg" alt="">
-							</div>
-						</div>
-						
-					</div>					
+				<div class="owl-carousel owl-theme">
+
+				    <div class="slider-item">
+				    	<img class="slider-item_img-mx cover-img" src="images/gps_slid_1.jpg" alt="">
+				    	<div class="mt1">
+				    		<p  class="line-height-1">Наблюдения и контроль каждого автомобиля, водителя автопарка: маршруты,
+								остановки ,скорость движения, время и точка отправления/прибытие,длительность пути</p>
+				    	</div>
+				    </div>
+				    <div class="slider-item">
+				    	<img class="slider-item_img-mx cover-img" src="images/gps_slid_2.jpg" alt="">
+				    	<div class="mt1">
+				    		<p  class="line-height-1">Наблюдения и контроль каждого автомобиля, водителя автопарка: маршруты,
+								остановки ,скорость движения, время и точка отправления/прибытие,длительность пути</p>
+				    	</div>			
+				    </div>
+				    <div class="slider-item">
+				    	<img class="slider-item_img-mx cover-img" src="images/gps_slid_3.jpg" alt="">
+				    	<div class="mt1">
+				    		<p  class="line-height-1">Наблюдения и контроль каждого автомобиля, водителя автопарка: маршруты,
+								остановки ,скорость движения, время и точка отправления/прибытие,длительность пути</p>
+				    	</div>
+				    </div>
 				</div>
 			</div>
 		</div>
@@ -136,6 +132,18 @@
 		</div>
 	</footer>
 </div>
-
+<script>
+    $(document).ready(function() {
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoHeight: true,
+    	autoPlay: true,
+        nav:true,
+        items: 1,
+        dots: false
+      })
+    })
+</script>
 </body>
 </html>

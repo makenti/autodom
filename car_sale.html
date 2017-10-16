@@ -3,14 +3,13 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Autodom</title>
-	<meta name="author" content="Alvaro Trigo Lopez" />
-	<meta name="description" content="fullPage full-screen backgrounds." />
-	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
-	<meta name="Resource-type" content="Document" />
+
 
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
@@ -20,23 +19,26 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>	
 	<script type="text/javascript" src="js/script.js"></script>
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				verticalCentered: false
-			});
-		});
-	</script>
 
 </head>
 <body>
 <div class="">
+	<header class="flex items-center justify-between">
+		<div class="flex items-center">
+			<img src="images/logo-main-w.svg" alt="" class="header-logo">
+			<span class="phone-span">+7 727 39 45 605</span>
+		</div>
+		<ul class="header-menu">
+			<li><a href="">О компании</a></li>
+			<li><a href="">Партнеры</a></li>
+			<li><a href="">Контакты</a></li>
+		</ul>
+	</header>
 	<div class="section section-main">
 		<div class="block-img">
-			<img src="images/section2.jpg" alt="">
+			<img src="images/section14.jpg" alt="">
 		</div>
 		<div class="container">
 			<div class="about-text mb3" >
@@ -48,13 +50,13 @@
 			<div class="row mb4">
 				<div class="col-6">
 					<div class="service-block-img">
-						<img src="images/section2.jpg" alt="">
+						<img src="images/section16.jpg" alt="">
 					</div>
 					<a class="link bold" href="">ТОЙОТА СИТИ АЛМАТЫ <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 				</div>
 				<div class="col-6">
 					<div class="service-block-img">
-						<img src="images/section2.jpg" alt="">
+						<img src="images/section17.jpg" alt="">
 					</div>
 					<a class="link bold" href="">ТОЙОТА СИТИ АСТАНА <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 				</div>
@@ -62,13 +64,13 @@
 			<div class="row mb4">
 				<div class="col-6">
 					<div class="service-block-img">
-						<img src="images/section2.jpg" alt="">
+						<img src="images/section18.jpg" alt="">
 					</div>
 					<a class="link bold" href="">ТОЙОТА КОСТАНАЙ <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 				</div>
 				<div class="col-6">
 					<div class="service-block-img">
-						<img src="images/section2.jpg" alt="">
+						<img src="images/section19.jpg" alt="">
 					</div>
 					<a class="link bold" href="">ТОЙОТА АКТАУ<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 				</div>
@@ -77,13 +79,13 @@
 			<div class="row mb4">
 				<div class="col-6">
 					<div class="service-block-img">
-						<img src="images/section2.jpg" alt="">
+						<img src="images/section20.jpg" alt="">
 					</div>
 					<a class="link bold" href="">ТОЙОТА КАРАГАНДЫ<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 				</div>
 				<div class="col-6">
 					<div class="service-block-img">
-						<img src="images/section2.jpg" alt="">
+						<img src="images/section21.jpg" alt="">
 					</div>
 					<a class="link bold" href="">АВТОСАЛОН NISSAN АЛМАТЫ <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 				</div>
@@ -91,7 +93,7 @@
 			<div class="row mb4">
 				<div class="col-6">
 					<div class="service-block-img">
-						<img src="images/section2.jpg" alt="">
+						<img src="images/section22.jpg" alt="">
 					</div>
 					<a class="link bold" href="">АВТОСАЛОН NISSAN АТЫРАУ <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 				</div>
@@ -101,51 +103,80 @@
 			<div class="col-12 mb4">
 				<div class="block-video">
 					
-					<iframe  id="yt" src="https://www.youtube.com/embed/fL_oViGIkRM" frameborder="0" allowfullscreen></iframe>
+					<iframe id="yt" src="https://www.youtube.com/embed/8n1LWUSVGcI" frameborder="0" allowfullscreen></iframe>
 					<div id="content">
-						<img id="alternative" src="images/fon.jpg" />
+						<img id="alternative" src="images/section15.jpg" />
 						
-							<button class="click-video">СМОТРЕТЬ ВИДЕО <i class="fa fa-play" aria-hidden="true"></i></button>						
+						<button class="click-video">СМОТРЕТЬ ВИДЕО <i class="fa fa-play" aria-hidden="true"></i></button>						
 						
 					</div>
 				</div>
+				<script type="text/javascript">
+					$("button").click(function () {
+					    $("#content").hide();
+					    $("#yt")[0].src += "?autoplay=1";
+					    setTimeout(function(){ $("#yt").show(); }, 200);
+					});
+				</script>
 			</div>
 		</div>
 	</div>
-	<div class="section section-footer flex">
-		<div class="">
-			<p class="lead">Услуги Autodom Group</p>
-			<ul>
-				<li>Пассажирские перевозки и аренда автомобилей</li>
-				<li>Продажа автомобилей и послепродажное обслуживание</li>
-				<li>GPS мониторинг</li>
-				<li>Складское оборудование</li>
-				<li>Спецтехника и грузоподъемное оборудование</li>
-				<li>Грузовые атомобили</li>
-				<li>Услуги хранения и обработка вагонов</li>
-				<li>FMCG — Товары повседневного спроса</li>
-				<li>Рекрутинг</li>
-				<li>Партнеры</li>
-			</ul>
+	<footer>
+		<div class="footer-logo-container">
+			<img src="images/logo-main-b.svg" alt="" class="footer-logo">
 		</div>
-		<div class="">
-			<p class="lead">О компании</p>
-			<ul>
-				<li>История</li>
-				<li>Руководство</li>
-				<li>Награды, достижения, сертификаты</li>
-				<li>Отзывы клиентов</li>
-			</ul>
+		<div class="section section-footer flex">
+			<div class="">
+				<p class="lead">Услуги Autodom Group</p>
+				<ul>
+					<li>Пассажирские перевозки и аренда автомобилей</li>
+					<li>Продажа автомобилей и послепродажное обслуживание</li>
+					<li>GPS мониторинг</li>
+					<li>Складское оборудование</li>
+					<li>Спецтехника и грузоподъемное оборудование</li>
+					<li>Грузовые атомобили</li>
+					<li>Услуги хранения и обработка вагонов</li>
+					<li>FMCG — Товары повседневного спроса</li>
+					<li>Рекрутинг</li>
+					<li>Партнеры</li>
+				</ul>
+			</div>
+			<div class="">
+				<p class="lead">О компании</p>
+				<ul>
+					<li>История</li>
+					<li>Руководство</li>
+					<li>Награды, достижения, сертификаты</li>
+					<li>Отзывы клиентов</li>
+				</ul>
+			</div>
+			<div class="">
+				<p class="lead">Контакты</p>
+				<ul>
+					<li>Отделения в РК</li>
+					<li>Обратная связь</li>
+				</ul>
+			</div>
 		</div>
-		<div class="">
-			<p class="lead">Контакты</p>
-			<ul>
-				<li>Отделения в РК</li>
-				<li>Обратная связь</li>
-			</ul>
+		<div class="footer-contacts-container flex justify-between">
+			<span>autodom-t.kz © Все права защищены</span>
+			<span>Алматы, 050040, ул. Сатпаева, 29/6, Рахат Палас Отель</span>
+			<span>+7 727 394 56 05, info@autodom.kz</span>
 		</div>
-	</div>
+	</footer>
 </div>
-
+<script>
+    $(document).ready(function() {
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoHeight: true,
+    	autoPlay: true,
+        nav:true,
+        items: 1,
+        dots: false
+      })
+    })
+</script>
 </body>
 </html>
