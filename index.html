@@ -28,18 +28,19 @@
 			$('#fullpage').fullpage({
 				verticalCentered: false,
 				anchors:[
-					'section0',
-					'section1',
-					'section2',
-					'section3',
-					'section4',
-					'section5',
-					'section6',
-					'section7',
-					'section8',
-					'section9',
-					'section10',
+					'section-0',
+					'section-1',
+					'section-2',
+					'section-3',
+					'section-4',
+					'section-5',
+					'section-6',
+					'section-7',
+					'section-8',
+					'section-9',
+					'section-10',
 					'partners',
+					'footer',
 				]
 			});
 		});
@@ -48,10 +49,10 @@
 </head>
 <body>
 <div id="fullpage" class="main-page">
-	<div class="section cover-bg" id="section0">
+	<div class="section cover-bg" id="section0" data-anchor="section-0">
 		<div class="header-index flex items-center justify-between">
 			<div class="flex items-center">
-				<a href="index.html"><img src="images/logo-main.svg" alt="" class="header-logo"></a>
+				<a href="index.html"><img src="images/logo.png" alt="" class="header-logo"></a>
 				<a href="tel:77273945605" class="phone-span">+7 727 39 45 605</a>
 			</div>
 			<ul class="header-menu">
@@ -60,7 +61,13 @@
 				<li><a href="contacts.html">Контакты</a></li>
 			</ul>
 		</div>
+
 		<div class="slide active">
+			<div class=" white-text">
+				<img src="images/logo.png" alt="" class="slide-logo">
+			</div>
+		</div>
+		<div class="slide">
 			<div class="main-slider-content white-text">
 				<h1 class="white-text mb2">На месторождениях и в городах</h1>
 				<div class="slider-content">АВТОДОМ — лидер в сфере услуг пассажирских перевозок на месторождениях и в городах Казахстана</div>
@@ -76,11 +83,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="section cover-bg flex" id="section1">
+	<div class="section cover-bg flex" id="section1" data-anchor="section-1">
 		<div class="section-image"></div>
     <div class="section-body">
 			<p class="right-align">
-				<img src="images/logo-single.svg" alt="" class="logo-single">
+				<img src="images/logo.png" alt="" class="logo-single">
 			</p>
 			<h1 class="red-text mb3">Группа компаний Автодом</h1>
 			<div class="section-content mb3">
@@ -91,7 +98,7 @@
 			<p><a href="about.html" class="red-text">Читать подробнее</a></p>
     </div>
   </div>
-	<div class="section cover-bg flex" id="section2">
+	<div class="section cover-bg flex" id="section2" data-anchor="section-2">
 		<div class="section-image"></div>
     <div class="section-body">
 			<h1 class="white-text mb3">Пассажирские перевозки и аренда автомобилей</h1>
@@ -105,7 +112,7 @@
 			</p>
     </div>
 	</div>
-	<div class="section flex cover-bg" id="section3">
+	<div class="section flex cover-bg" id="section3" data-anchor="section-3">
     <div class="section-body">
 			<h2 class="mb2">Продажа автомобилей и послепродажное обслуживание</h2>
 			<div class="section-content mb2">
@@ -122,7 +129,7 @@
     </div>
 		<div class="section-image"></div>
 	</div>
-	<div class="section cover-bg flex" id="section4">
+	<div class="section cover-bg flex" id="section4" data-anchor="section-4">
 		<div class="section-image"></div>
     <div class="section-body">
 			<h1 class="white-text mb2">GPS мониторинг</h1>
@@ -133,7 +140,7 @@
 			<p><a href="http://e-drivetech.kz/" class="btn btn-red">e-drivetech.kz</a></p>
     </div>
 	</div>
-	<div class="section cover-bg flex" id="section5">
+	<div class="section cover-bg flex" id="section5" data-anchor="section-5">
 		<div class="section-body">
 			<h1 class="mb2">Складское оборудование</h1>
 			<div class="section-content mb2">
@@ -151,7 +158,7 @@
     </div>
 		<div class="section-image "></div>
 	</div>
-	<div class="section cover-bg flex " id="section6">
+	<div class="section cover-bg flex " id="section6" data-anchor="section-6">
 		<div class="section-image"></div>
     <div class="section-body">
 			<h1 class="white-text mb2">Спецтехника и грузоподъемное оборудование</h1>
@@ -165,7 +172,7 @@
 			</p>
     </div>
 	</div>
-	<div class="section cover-bg flex " id="section7">
+	<div class="section cover-bg flex " id="section7" data-anchor="section-7">
 		<div class="section-body">
 			<h1 class="mb2 white-text">Грузовые автомобили</h1>
 			<div class="section-content mb2 white-text">
@@ -177,7 +184,7 @@
     </div>
 		<div class="section-image "></div>
 	</div>
-	<div class="section cover-bg flex " id="section8">
+	<div class="section cover-bg flex " id="section8" data-anchor="section-8">
 		<div class="section-image"></div>
     <div class="section-body">
 			<h1 class="red-text mb2">Услуги хранения и обработка вагонов</h1>
@@ -199,7 +206,7 @@
 			<p class="mb3"><a href="service_save.html" class="red-text">Читать подробнее</a></p>
     </div>
 	</div>
-	<div class="section cover-bg flex" id="section9">
+	<div class="section cover-bg flex" id="section9" data-anchor="section-9">
     <div class="section-body">
 			<h1 class="white-text mb2">FMCG — Товары повседневного спроса</h1>
 			<div class="section-content mb2">
@@ -212,13 +219,14 @@
     </div>
 		<div class="section-image"></div>
 	</div>
-	<div class="section cover-bg flex" id="section10">
+	<div class="section cover-bg flex" id="section10" data-anchor="section-10">
 		<div class="section-image"></div>
     <div class="section-body">
 			<h1 class="red-text mb2">Рекрутинг</h1>
 			<div class="section-content mb2">
 				<p >ТОО «North Caspian Recruitment Company» является вновь созданным подразделением Autodom Group, которое консолидировало в себе следующие функции: Проведение тренингов, предоставление иностранных и местных кадров, рекрутинг, производственные и специализированные услуги.</p>
 			</div>
+			<p class="mb3"><a href="rekruting.html" class="red-text">Читать подробнее</a></p>
 			<p><a href="http://ncrc.kz/" class="btn btn-red mr1">ncrc.kz</a></p>
     </div>
 	</div>
@@ -269,12 +277,13 @@
 			</div>
 		</div>
 	</div>
-	<footer class="section">
-		<div class="footer-logo-container">
-			<img src="images/logo-main-b.svg" alt="" class="footer-logo">
-		</div>
+	<footer class="section" data-anchor="footer">
+		<div class="footer-logo-container"></div>
 		<div class="section-footer flex">
-			<div class="">
+			<div class="footer-block">
+				<img src="images/logo.png" alt="" class="footer-logo">
+			</div>
+			<div class="footer-block">
 				<p class="lead">Услуги Autodom Group</p>
 				<ul>
 					<li><a href="car_rent.html">Пассажирские перевозки и аренда автомобилей</a></li>
@@ -289,20 +298,17 @@
 					<li><a href="#partners">Партнеры</a></li>
 				</ul>
 			</div>
-			<div class="">
+			<div class="footer-block">
 				<p class="lead">О компании</p>
 				<ul>
-					<li><a href="about.html">История</a></li>
+					<li><a href="about.html">О компании</a></li>
 					<li><a href="about.html">Руководство</a></li>
 					<li><a href="about.html">Награды, достижения, сертификаты</a></li>
-					<li><a href="about.html">Отзывы клиентов</a></li>
 				</ul>
-			</div>
-			<div class="">
+				<br/>
 				<p class="lead">Контакты</p>
 				<ul>
 					<li><a href="contacts.html">Отделения в РК</a></li>
-					<li><a href="contacts.html">Обратная связь</a></li>
 				</ul>
 			</div>
 		</div>

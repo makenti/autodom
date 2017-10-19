@@ -3,13 +3,13 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Autodom</title>
-	<meta name="author" content="Alvaro Trigo Lopez" />
-	<meta name="description" content="fullPage full-screen backgrounds." />
-	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
-	<meta name="Resource-type" content="Document" />
 
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -20,55 +20,154 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				verticalCentered: false
-			});
-		});
-	</script>
-
 </head>
 <body>
-<div class="">
-
-	<div class="section section-footer flex">
-		<div class="">
-			<p class="lead">Услуги Autodom Group</p>
-			<ul>
-				<li>Пассажирские перевозки и аренда автомобилей</li>
-				<li>Продажа автомобилей и послепродажное обслуживание</li>
-				<li>GPS мониторинг</li>
-				<li>Складское оборудование</li>
-				<li>Спецтехника и грузоподъемное оборудование</li>
-				<li>Грузовые атомобили</li>
-				<li>Услуги хранения и обработка вагонов</li>
-				<li>FMCG — Товары повседневного спроса</li>
-				<li>Рекрутинг</li>
-				<li>Партнеры</li>
-			</ul>
+<div>
+	<header class="flex items-center justify-between">
+		<div class="flex items-center">
+			<a href="index.html"><img src="images/logo.png" alt="" class="header-logo"></a>
+			<a href="tel:77273945605" class="phone-span">+7 727 39 45 605</a>
 		</div>
-		<div class="">
-			<p class="lead">О компании</p>
-			<ul>
-				<li>История</li>
-				<li>Руководство</li>
-				<li>Награды, достижения, сертификаты</li>
-				<li>Отзывы клиентов</li>
-			</ul>
-		</div>
-		<div class="">
-			<p class="lead">Контакты</p>
-			<ul>
-				<li>Отделения в РК</li>
-				<li>Обратная связь</li>
-			</ul>
+		<ul class="header-menu">
+			<li><a href="about.html">О компании</a></li>
+			<li><a href="index.html#partners">Партнеры</a></li>
+			<li><a href="contacts.html">Контакты</a></li>
+		</ul>
+	</header>
+	<div class="contacts-wrapper container">
+		<h1 class="mb3">Контакты</h1>
+		<div class="flex justify-between">
+			<div class="cities-container">
+				<div class="city-block"><span data-pin="pin1" class="red-text city-name city1">Астана</span>
+					<!-- <div class="info">
+						<p>ул. Сатпаева, 29/6, Рахат Палас Отель</p>
+						<p>+7 727 39 45 605</p>
+						<p>info@autodom.kz</p>
+					</div> -->
+				</div>
+				<div class="city-block"><span data-pin="pin2" class="red-text city-name active city2">Алматы</span>
+					<div class="info">
+						<p>050040</p>
+						<p>ул. Сатпаева, 29/6, Рахат Палас Отель</p>
+						<p>+7 727 39 45 605</p>
+						<p>info@autodom.kz</p>
+					</div>
+				</div>
+				<div class="city-block"><span data-pin="pin3" class="red-text city-name city3">Атырау </span>
+					<!-- <div class="info">
+						<p>ул. Сатпаева, 29/6, Рахат Палас Отель</p>
+						<p>+7 727 39 45 605</p>
+						<p>info@autodom.kz</p>
+					</div> -->
+				</div>
+				<div class="city-block"><span data-pin="pin4" class="red-text city-name city4">Актау</span>
+					<!-- <div class="info">
+						<p>ул. Сатпаева, 29/6, Рахат Палас Отель</p>
+						<p>+7 727 39 45 605</p>
+						<p>info@autodom.kz</p>
+					</div> -->
+				</div>
+				<div class="city-block"><span data-pin="pin5" class="red-text city-name city5">Аксай</span>
+					<!-- <div class="info">
+						<p>ул. Сатпаева, 29/6, Рахат Палас Отель</p>
+						<p>+7 727 39 45 605</p>
+						<p>info@autodom.kz</p>
+					</div> -->
+				</div>
+				<div class="city-block"><span data-pin="pin6" class="red-text city-name city6">Шымкент</span>
+					<!-- <div class="info">
+						<p>ул. Сатпаева, 29/6, Рахат Палас Отель</p>
+						<p>+7 727 39 45 605</p>
+						<p>info@autodom.kz</p>
+					</div> -->
+				</div>
+				<div class="city-block"><span data-pin="pin7" class="red-text city-name city7">Уральск</span>
+					<!-- <div class="info">
+						<p>ул. Сатпаева, 29/6, Рахат Палас Отель</p>
+						<p>+7 727 39 45 605</p>
+						<p>info@autodom.kz</p>
+					</div> -->
+				</div>
+				<div class="city-block"><span data-pin="pin8" class="red-text city-name city8">Павлодар</span>
+					<!-- <div class="info">
+						<p>ул. Сатпаева, 29/6, Рахат Палас Отель</p>
+						<p>+7 727 39 45 605</p>
+						<p>info@autodom.kz</p>
+					</div> -->
+				</div>
+				<div class="city-block"><span data-pin="pin9" class="red-text city-name city9">Костанай</span>
+					<!-- <div class="info">
+						<p>ул. Сатпаева, 29/6, Рахат Палас Отель</p>
+						<p>+7 727 39 45 605</p>
+						<p>info@autodom.kz</p>
+					</div> -->
+				</div>
+			</div>
+			<div class="map-container">
+				<div class="map">
+					<img src="images/map-kaz.svg" alt="" class="map-img">
+					<div class="pin pin1" data-city="city1">Астана<span></span></div>
+					<div class="pin pin2 active" data-city="city2">Алматы<span></span></div>
+					<div class="pin pin3" data-city="city3">Атырау<span></span></div>
+					<div class="pin pin4" data-city="city4">Актау<span></span></div>
+					<div class="pin pin5" data-city="city5">Аксай<span></span></div>
+					<div class="pin pin6" data-city="city6">Шымкент<span></span></div>
+					<div class="pin pin7" data-city="city7">Уральск<span></span></div>
+					<div class="pin pin8" data-city="city8">Павлодар<span></span></div>
+					<div class="pin pin9" data-city="city9">Костанай<span></span></div>
+				</div>
+			</div>
 		</div>
 	</div>
+	<footer class="section" data-anchor="footer">
+		<div class="footer-logo-container"></div>
+		<div class="section-footer flex">
+			<div class="footer-block">
+				<img src="images/logo.png" alt="" class="footer-logo">
+			</div>
+			<div class="footer-block">
+				<p class="lead">Услуги Autodom Group</p>
+				<ul>
+					<li><a href="car_rent.html">Пассажирские перевозки и аренда автомобилей</a></li>
+					<li><a href="car_sale.html">Продажа автомобилей и послепродажное обслуживание</a></li>
+					<li><a href="gps.html">GPS мониторинг</a></li>
+					<li><a href="sklad.html">Складское оборудование</a></li>
+					<li><a href="car_machine.html">Спецтехника и грузоподъемное оборудование</a></li>
+					<li><a href="car_big.html">Грузовые атомобили</a></li>
+					<li><a href="service_save.html">Услуги хранения и обработка вагонов</a></li>
+					<li><a href="fmcg.html">FMCG — Товары повседневного спроса</a></li>
+					<li><a href="rekruting.html">Рекрутинг</a></li>
+					<li><a href="#partners">Партнеры</a></li>
+				</ul>
+			</div>
+			<div class="footer-block">
+				<p class="lead">О компании</p>
+				<ul>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="about.html">Руководство</a></li>
+					<li><a href="about.html">Награды, достижения, сертификаты</a></li>
+				</ul>
+				<br/>
+				<p class="lead">Контакты</p>
+				<ul>
+					<li><a href="contacts.html">Отделения в РК</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-contacts-container flex justify-between">
+			<span>autodom-t.kz © Все права защищены</span>
+			<span>Алматы, 050040, ул. Сатпаева, 29/6, Рахат Палас Отель</span>
+			<span>+7 727 394 56 05, info@autodom.kz</span>
+		</div>
+	</footer>
 </div>
-
+<script type="text/javascript">
+	$('.pin').click(function(){
+		$(".pin").removeClass('active');
+		$(this).addClass('active');
+	})
+</script>
 </body>
 </html>

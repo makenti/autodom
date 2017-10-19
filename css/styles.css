@@ -53,6 +53,7 @@ header{
   height: 100px;
   padding: 0 40px;
 }
+.header-logo{max-height: 100px;max-width: 100px;}
 header .phone-span,
 .header-index .phone-span{
   margin-left: 70px;
@@ -77,7 +78,8 @@ footer{background: #E5E5E5;padding-top: 80px;font-size: 14px;}
 .footer-contacts-container,
 .footer-logo-container{max-width: 1120px;margin: 0 auto;}
 .footer-logo-container{padding-bottom: 20px;border-bottom: 2px solid #E0E0E0;margin-bottom: 20px;}
-.section-footer ul{padding-left: 14px;max-width: 300px;margin-right: 130px;margin-top: 16px;}
+.section-footer .footer-block{padding-left: 14px;max-width: 300px;margin-right: 130px;margin-top: 16px;}
+.section-footer ul{padding-left: 14px;margin-top: 16px;}
 .section-footer ul li {margin-bottom: 16px;line-height: 1}
 .footer-contacts-container{padding: 20px 0;border-top: 2px solid #E0E0E0;margin-top: 20px;}
 
@@ -117,6 +119,7 @@ footer{background: #E5E5E5;padding-top: 80px;font-size: 14px;}
 .section-body .logo-single{width: 60px;height: 60px;}
 .section-content{border-left: 1px solid #A22644;padding-left: 39px;max-width: 540px;}
 .main-slider-content{margin: 100px 160px;}
+.slide-logo{height: auto;width: 570px;margin: 0 auto;}
 .slider-content{border-left: 2px solid #A22644;padding-left: 40px;margin: 0 0 80px;max-width: 400px}
 .partners-container{max-width: 1120px;margin: 0 auto;padding: 40px 0;}
 .partner-item{text-align: center;width: 170px;}
@@ -150,6 +153,36 @@ footer{background: #E5E5E5;padding-top: 80px;font-size: 14px;}
     cursor: pointer;
 }
 
+/* contacts */
+.contacts-wrapper{
+  padding-top: 180px;
+  min-height: 600px;
+}
+.city-block{margin-bottom: 40px;}
+.city-block .info{margin-top: 10px;}
+.city-name{font-size: 36px;display: block;text-decoration: none;}
+.city-name.active{color: #000000}
+.map{position: relative;width: 733px;max-height: 400px;}
+.map-img {position: absolute;left: 0;top: 0;width: 700px;}
+.pin{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-decoration: none;
+}
+.pin span{background: url(../images/pin.png) no-repeat;height: 40px;width: 40px;display: block}
+.pin.active span{background: url(../images/pin-active.png) no-repeat;}
+.pin:hover span{background: url(../images/pin-hover.png) no-repeat;}
+.pin1{left: 458px;top: 65px;}
+.pin2{left: 518px;top: 259px;}
+.pin3{left: 93px;top: 157px;}
+.pin4{left: 85px;top: 270px;}
+.pin5{left: 113px;top: 85px;}
+.pin6{left: 381px;top: 290px;}
+.pin7{left: 64px;top: 62px;}
+.pin8{left: 500px;top: 16px;}
+.pin9{left: 300px;top: 28px;}
 /* new style */
 .small {
 	font-size: 80%;
