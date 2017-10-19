@@ -116,7 +116,7 @@ footer{background: #E5E5E5;padding-top: 80px;font-size: 14px;}
 .section-image{background-repeat: no-repeat;}
 .section-image,
 .section-body{width: 50%;height: 100%;padding: 90px 40px;}
-.section-body .logo-single{width: 60px;height: 60px;}
+.section-body .logo-single{width: 100px;height: 100px;}
 .section-content{border-left: 1px solid #A22644;padding-left: 39px;max-width: 540px;}
 .main-slider-content{margin: 100px 160px;}
 .slide-logo{height: auto;width: 570px;margin: 0 auto;}
