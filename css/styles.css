@@ -7,6 +7,7 @@
 
 body{
   font-family: 'Akzentica', sans-serif;
+  position: relative;
 }
 div {
 	display: block;
@@ -135,7 +136,6 @@ footer{background: #E5E5E5;padding-top: 80px;font-size: 14px;}
 #section8{background-image: url(../images/section9.png);}
 #section9{background-image: url(../images/section10.png);}
 #section10{background-image: url(../images/section11.png);}
-
 .main-page .fp-controlArrow.fp-prev {
     left: 40px;
     border: none;
@@ -151,6 +151,18 @@ footer{background: #E5E5E5;padding-top: 80px;font-size: 14px;}
     height: 40px;
     background: url(../images/arrow-right.svg) no-repeat;
     cursor: pointer;
+}
+.to-top-btn{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background: url(../images/to-top.svg) no-repeat #111;
+    cursor: pointer;
+    z-index: 2000;
+    border-radius: 4px;
 }
 
 /* contacts */

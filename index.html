@@ -44,10 +44,14 @@
 				]
 			});
 		});
+		$(document).on('click', '.to-top-btn', function(){
+			$.fn.fullpage.moveTo('section-0');
+		});
 	</script>
 
 </head>
 <body>
+	<div class="to-top-btn"></div>
 <div id="fullpage" class="main-page">
 	<div class="section cover-bg" id="section0" data-anchor="section-0">
 		<div class="header-index flex items-center justify-between">
@@ -69,17 +73,17 @@
 		</div>
 		<div class="slide">
 			<div class="main-slider-content white-text">
-				<h1 class="white-text mb2">На месторождениях и в городах</h1>
-				<div class="slider-content">АВТОДОМ — лидер в сфере услуг пассажирских перевозок на месторождениях и в городах Казахстана</div>
+				<h2 class="white-text mb2">Главным для нас является соблюдение высоких стандартов качества обслуживания, а также идеальный подбор необходимых услуг для каждого клиента</h2>
+				<!-- <div class="slider-content">АВТОДОМ — лидер в сфере услуг пассажирских перевозок на месторождениях и в городах Казахстана</div>
 				<p class="mb3"><a href="#" class="btn btn-red text-decoration-none">Арендовать транспорт</a></p>
-				<p><a href="#" class="white-text">Подробнее</a></p>
+				<p><a href="#" class="white-text">Подробнее</a></p> -->
 			</div>
 		</div>
     <div class="slide">
 			<div class="main-slider-content white-text">
 				<h1 class="white-text mb2">Безопасность превыше всего!</h1>
-				<div class="slider-content">АВТОДОМ работает по принципу постоянного совершенствования. Основной аспект компании - "безопасность превыше всего!".</div>
-				<p><a href="#" class="white-text">Подробнее</a></p>
+				<div class="slider-content">Autodom Group работает по принципу постоянного совершенствования. Основной аспект компании - "безопасность превыше всего"!</div>
+				<!-- <p><a href="#" class="white-text">Подробнее</a></p> -->
 			</div>
 		</div>
 	</div>
