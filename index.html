@@ -41,7 +41,18 @@
 					'section-10',
 					'partners',
 					'footer',
-				]
+				],
+				afterRender: function () {
+					slideTimeout = setInterval(function () {
+						$.fn.fullpage.moveSlideRight();
+	 				}, 3000);
+				},
+
+				onLeave: function (index, direction) {
+			 		if (index == '1') {
+						clearInterval(slideTimeout);
+				 	}
+			 	}
 			});
 		});
 		$(document).on('click', '.to-top-btn', function(){
